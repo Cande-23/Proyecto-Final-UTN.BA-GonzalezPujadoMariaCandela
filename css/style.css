@@ -1,0 +1,313 @@
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgb(243, 225, 227);
+}
+
+.containers {
+    background-color: #e02f49;
+    padding: 16px 0;
+    text-align: start;
+}
+
+.containers h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+    padding-top: 50px;
+}
+
+nav {
+    background-color: #dc7d8b;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+} 
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color:  #f1415b;;
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: rgb(255, 0, 0);
+    text-align: center; 
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+nav ul li a.activo {
+    background-color: rgb(255, 102, 110);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(248, 63, 79);
+    font-weight: 400;
+}
+/*inicio home*/
+
+.hamburguesas {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: rgb(243, 225, 227);
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburguesas p {
+    font-size: 20px;
+}
+
+/*fin home*/
+
+/*inicio contactanos*/
+.historia p {
+    font-size: 15px; /*0.7rem*/
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(255, 180, 180);
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona img {
+    border-radius: 50%;
+    max-width: 40%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5) ;
+}
+
+.persona h5{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.persona h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.persona p {
+    color:rgb(0, 0, 0);
+    font-size: 12px;
+    
+}
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto .left {
+    border-right: 1px solid rgb(235, 179, 179);
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos .form-group {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario .form-group {
+    display: flex;
+}
+
+.formulario .form-group label {
+    min-width: 80px;
+}
+
+.formulario .form-group label {
+    display: flex;
+    align-items: center;
+}
+
+.formulario .form-group:nth-child(4) {
+    align-items: start;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #f7a2ae;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 222, 222);
+    width: 70%;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario button[type="submit"] {
+    background: #eb4174;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #f32b35;
+}
+/*fin contactanos*/
+
+/*inicio productos*/
+.flex-container{
+    display: flex;
+    background-color: #dc7d8b;
+    flex-direction: row;
+    margin-bottom: 20px;
+   }    
+
+.flex-container div {
+   margin: 10px;
+   color: rgb(255, 255, 255);
+   width: 200px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-grow: 1;
+}
+   
+@media (max-width: 500px) {
+       .flex-container{
+          flex-direction: column;
+       }    
+}
+
+.flex-container div a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+.flex-container div a:hover {
+    background-color:  #f1415b;;
+}
+
+.servicios {
+    border: 1px solid #fff0f0;
+    border-radius: 10px;
+    padding: 26px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    background-color: #f5c7ce;
+}
+
+.servicios .info h4 {
+    color: #f1415b;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #f1415b;
+    padding-bottom: 10px;
+}
+
+.servicios .info p {
+    font-size: 13px;
+    line-height: 19px;    
+}
+
+.servicios img {
+    border-radius: 13px;
+    display: block;
+    max-width: 355px;
+}
+
+.servicios:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+}
+/*fin productos*/
+
+/*inicio galeria*/
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: #000000;
+}
+
+.foto {
+    float: left;
+    display: grid;
+    width: 260px;
+    margin: 0 auto;
+    border: 1px solid rgb(243, 204, 204);
+    padding: 10px; 
+    box-sizing: content-box;
+}
+
+.foto img {
+    width: 100%;
+    display: flex;
+}
+
+/*fin galeria*/
